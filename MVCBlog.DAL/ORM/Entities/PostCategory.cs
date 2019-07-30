@@ -10,6 +10,8 @@ namespace MVCBlog.DAL.ORM.Entities
     {
         public string PostCategoryName { get; set; }
 
+        public string Description { get; set; }
+
         public virtual List<Post> Posts { get; set; }
     }
 }

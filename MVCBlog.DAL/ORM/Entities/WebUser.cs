@@ -14,5 +14,12 @@ namespace MVCBlog.DAL.ORM.Entities
         public string SurName { get; set; }
         public DateTime LastLoginDate { get; set; }
         public DateTime BirthDate { get; set; }
+
+        public virtual List<PostComment> PostComments { get; set; }
+
+        public virtual List<PostLike> PostLike { get; set; }
+
+        public virtual PostImage PostImage { get; set; }
+
     }
 }

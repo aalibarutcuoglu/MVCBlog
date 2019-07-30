@@ -13,5 +13,9 @@ namespace MVCBlog.DAL.ORM.Entities
 
         [ForeignKey("PostID")]
         public Post Post { get; set; }
+
+        public int WebUserID { get; set; }
+        [ForeignKey("WebUserID")]
+        public virtual WebUser WebUsers { get; set; }
     }
 }
